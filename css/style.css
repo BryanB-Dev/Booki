@@ -72,7 +72,12 @@ header {
 }
 
 main {
-    padding: 0 50px;
+    display: flex;
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch;
 }
 
 .info-group {
@@ -90,7 +95,7 @@ main {
     width: 377px;
     height: 49px;
     align-items: center;
-    background: white; 
+    background: white;
 }
 
 .search-field {
@@ -103,8 +108,8 @@ main {
 
 .search-logo {
     width: 50px;
-    height: 49px; 
-    flex-shrink: 0; 
+    height: 49px;
+    flex-shrink: 0;
     border-radius: 15px 0px 0px 15px;
     border: 1px solid var(--main-bg-color);
     background-color: #F2F2F2;
@@ -134,15 +139,59 @@ main {
 
 .search-button-text {
     color: white;
-    font-style: normal; 
+    font-style: normal;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    line-height: normal; 
+    line-height: normal;
 }
 
 input[type="search"] {
     outline: none;
+}
+
+.info-filter {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter-button {
+    display: flex;
+    height: 50px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+}
+
+.filter-button:hover {
+    background: var(--filter-bg-color)
+}
+
+.filter-button[selected] {
+    background: var(--filter-bg-color)
+}
+
+.filter-name {
+    font-size: 17px;
+}
+
+.info-bar {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
 }
 
 a {
