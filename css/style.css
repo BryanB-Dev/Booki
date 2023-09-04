@@ -277,6 +277,10 @@ a {
     align-self: stretch;
 }
 
+.hebergements-frame a {
+    width: 100%;
+}
+
 .hebergements-frame .card {
     padding: 0px;
     display: flex;
@@ -315,6 +319,10 @@ a {
     line-height: 1;
 }
 
+.hebergements .view-more {
+    font-size: 18px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -328,12 +336,12 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 134px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
