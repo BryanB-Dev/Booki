@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,7 +21,7 @@
                 <img class="header-logo" src="./images/logo/Booki@3x.png" alt="">
             </h1>
             <nav class="header-nav">
-                <a class="nav-item" selected href="#">
+                <a class="nav-item active" href="#">
                     Hébergements
                 </a>
                 <a class="nav-item" href="#">
@@ -32,10 +32,10 @@
         <main>
             <div class="info-group">
                 <section class="info-head">
-                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p class="section-description">En plein centre-ville ou en pleine nature</p>
                 </section>
-                <section>
+                <div>
                     <form class="info-search">
                         <i class="search-logo fa-lg fa-solid fa-location-dot"></i>
                         <div class="search-field">
@@ -43,33 +43,33 @@
                                 value="Marseille, France">
                         </div>
                         <button class="search-button" type="submit">
-                            <p class="search-button-text">Rechercher</p>
+                            <span class="search-button-text">Rechercher</span>
                         </button>
                     </form>
-                </section>
+                </div>
                 <section class="info-filter">
                     <h2 class="filter-title">Filtres</h2>
                     <button class="filter-button">
                         <i class="fa-xl fa-solid fa-money-bill-wave"></i>
-                        <h2 class="filter-name">Économique</h2>
+                        <span class="filter-name">Économique</span>
                     </button>
                     <button class="filter-button">
                         <i class="fa-xl fa-solid fa-person" aria-hidden="true"></i>
-                        <h2 class="filter-name">Familial</h2>
+                        <span class="filter-name">Familial</span>
                     </button>
                     <button class="filter-button">
                         <i class="fa-xl fa-solid fa-heart" aria-hidden="true"></i>
-                        <h2 class="filter-name">Romantique</h2>
+                        <span class="filter-name">Romantique</span>
                     </button>
-                    <button class="filter-button" selected>
+                    <button class="filter-button active">
                         <i class="fa-xl fa-solid fa-fire" aria-hidden="true"></i>
-                        <h2 class="filter-name">Nos pépites</h2>
+                        <span class="filter-name">Nos pépites</span>
                     </button>
                 </section>
-                <section class="info-bar">
+                <div class="info-bar">
                     <i class="fa-2xs fa-solid fa-info info-bar-logo" aria-hidden="true"></i>
                     <p class="section-description">Plus de 500 logements sont disponibles dans cette ville</p>
-                </section>
+                </div>
             </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -182,7 +182,7 @@
                         </a>
                     </div>
                     <a href="#">
-                        <h3 class="view-more">Afficher plus</h2>
+                        <h3 class="view-more">Afficher plus</h3>
                     </a>
                 </section>
                 <section class="populaires">
