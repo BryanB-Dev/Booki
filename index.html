@@ -49,22 +49,24 @@
                 </div>
                 <section class="info-filter">
                     <h2 class="info-filter__title">Filtres</h2>
-                    <button class="info-filter__button">
-                        <i class="fa-xl fa-solid fa-money-bill-wave"></i>
-                        <span class="info-filter__name">Économique</span>
-                    </button>
-                    <button class="info-filter__button">
-                        <i class="fa-xl fa-solid fa-person" aria-hidden="true"></i>
-                        <span class="info-filter__name">Familial</span>
-                    </button>
-                    <button class="info-filter__button">
-                        <i class="fa-xl fa-solid fa-heart" aria-hidden="true"></i>
-                        <span class="info-filter__name">Romantique</span>
-                    </button>
-                    <button class="info-filter__button info-filter__button--active">
-                        <i class="fa-xl fa-solid fa-fire" aria-hidden="true"></i>
-                        <span class="info-filter__name">Nos pépites</span>
-                    </button>
+                    <div class="info-filter__frame">
+                        <button class="info-filter__button">
+                            <i class="fa-xl fa-solid fa-money-bill-wave"></i>
+                            <span class="info-filter__name">Économique</span>
+                        </button>
+                        <button class="info-filter__button">
+                            <i class="fa-xl fa-solid fa-person" aria-hidden="true"></i>
+                            <span class="info-filter__name">Familial</span>
+                        </button>
+                        <button class="info-filter__button">
+                            <i class="fa-xl fa-solid fa-heart" aria-hidden="true"></i>
+                            <span class="info-filter__name">Romantique</span>
+                        </button>
+                        <button class="info-filter__button info-filter__button--active">
+                            <i class="fa-xl fa-solid fa-fire" aria-hidden="true"></i>
+                            <span class="info-filter__name">Nos pépites</span>
+                        </button>
+                    </div>
                 </section>
                 <div class="info-bar">
                     <i class="fa-2xs fa-solid fa-info info-bar__logo" aria-hidden="true"></i>
@@ -201,8 +203,8 @@
                         <h2 class="section__title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div>
-                        <a href="#">
+                    <div class="populaire-frame">
+                        <a class="populaire-card__a" href="#">
                             <article class="card populaire-card">
                                 <img class="card__img populaire-card__img" src="./images/hebergements/emile-guillemot.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -222,7 +224,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="populaire-card__a" href="#">
                             <article class="card populaire-card">
                                 <img class="card__img populaire-card__img" src="./images/hebergements/aw-creative.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -242,7 +244,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="populaire-card__a" href="#">
                             <article class="card populaire-card">
                                 <img class="card__img populaire-card__img" src="./images/hebergements/febrian-zakaria2.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -266,68 +268,68 @@
                 </section>
             </div>
             <section class="activities">
-                <h2 class="section-title">Activités à Marseille</h2>
+                <h2 class="section__title">Activités à Marseille</h2>
                 <div class="activities-frame">
-                    <a href="#">
-                        <article class="card">
-                            <img src="./images/activites/reno-laithienne.jpg"
+                    <a class="activities-frame__a" href="#">
+                        <article class="card activities-card">
+                            <img class="card__img activities-card__img" src="./images/activites/reno-laithienne.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
-                            <h3 class="card-title">Vieux-Port</h3>
+                            <h3 class="card__title activities-card__title">Vieux-Port</h3>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="card">
-                            <img src="./images/activites/paul-hermann.jpg"
+                    <a class="activities-frame__a" href="#">
+                        <article class="card activities-card">
+                            <img class="card__img activities-card__img" src="./images/activites/paul-hermann.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
-                            <h3 class="card-title">Fort de Pomègues</h3>
+                            <h3 class="card__title activities-card__title">Fort de Pomègues</h3>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="card">
-                            <img src="./images/activites/kilyan-sockalingum.jpg"
+                    <a class="activities-frame__a" href="#">
+                        <article class="card activities-card">
+                            <img class="card__img activities-card__img" src="./images/activites/kilyan-sockalingum.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
-                            <h3 class="card-title">Parc national des Calanques</h3>
+                            <h3 class="card__title activities-card__title">Parc national des Calanques</h3>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="card">
-                            <img src="./images/activites/florian-wehde.jpg"
+                    <a class="activities-frame__a" href="#">
+                        <article class="card activities-card">
+                            <img class="card__img activities-card__img" src="./images/activites/florian-wehde.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
-                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            <h3 class="card__title activities-card__title">Notre-Dame-de-la-Garde</h3>
                         </article>
                     </a>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <section class="footer-frame">
-                <h3>À propos</h3>
+                <h3 class="footer-frame__title">À propos</h3>
                 <a href="#">
-                    <p class="section-description">Fonctionnement du site</p>
+                    <p class="section__description">Fonctionnement du site</p>
                 </a>
                 <a href="#">
-                    <p class="section-description">Conditions générales</p>
+                    <p class="section__description">Conditions générales</p>
                 </a>
                 <a href="#">
-                    <p class="section-description">Données et confidentialité</p>
+                    <p class="section__description">Données et confidentialité</p>
                 </a>
             </section>
             <section class="footer-frame">
-                <h3>Nos hébergements</h3>
+                <h3 class="footer-frame__title">Nos hébergements</h3>
                 <a href="#">
-                    <p class="section-description">Charte qualité</p>
+                    <p class="section__description">Charte qualité</p>
                 </a>
                 <a href="#">
-                    <p class="section-description">Proposer votre hôtel</p>
+                    <p class="section__description">Proposer votre hôtel</p>
                 </a>
             </section>
             <section class="footer-frame">
-                <h3>Assistance</h3>
+                <h3 class="footer-frame__title">Assistance</h3>
                 <a href="#">
-                    <p class="section-description">Centre d’aide</p>
+                    <p class="section__description">Centre d’aide</p>
                 </a>
                 <a href="#">
-                    <p class="section-description">Nous contacter</p>
+                    <p class="section__description">Nous contacter</p>
                 </a>
             </section>
         </footer>

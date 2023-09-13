@@ -159,6 +159,12 @@ main {
 
 .info-filter {
     display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-filter__frame {
+    display: flex;
     height: 50px;
     align-items: center;
     gap: 15px;
@@ -394,36 +400,36 @@ a {
     align-self: stretch;
 }
 
-.activities .activities-frame {
+.activities-frame {
     display: flex;
     align-items: flex-start;
     gap: 30px;
     align-self: stretch;
 }
 
-.activities-frame a {
+.activities-frame__a {
     width: 100%;
 }
 
-.activities-frame .card {
+.activities-card {
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.activities-frame img {
+.activities-card__img {
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
 
-.activities-frame .card-title {
+.activities-card__title {
     padding: 20px 19px;
 }
 
 
-footer {
+.footer {
     margin: 0px 50px;
     margin-top: 35px;
     display: flex;
@@ -431,7 +437,7 @@ footer {
     background-color: var(--main-bg-color);
 }
 
-footer .footer-frame {
+.footer-frame {
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -440,7 +446,7 @@ footer .footer-frame {
     flex: 1 0 0;
 }
 
-.footer-frame h3 {
+.footer-frame__title {
     font-size: 18px;
 }
 
@@ -449,35 +455,71 @@ footer .footer-frame {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+    .info-filter {
         flex-direction: column;
+        align-items: start;
+        gap: 20px;
     }
 
-    .hebergements {
+    .info-filter__title {
+        justify-content: left;
+    }
+
+    .hebergement-and-populaire {
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .hebergement {
         width: 100%;
     }
 
-    .populaires {
+    .populaire {
         width: 100%;
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
-
-    .populaires-cards {
+    
+    .populaire-frame {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 20px;
     }
 
-    .populaires-cards a {
-        width: 30%;
+    .populaire-card {
+        margin-top: 0;
     }
 
-    .populaires-cards .card-title {
+    .populaire-card__a {
+        width: 100%;
+    }
+
+    .populaire-card__title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaire-card__subtitle {
         font-size: 13px;
+    }
+
+    .activities-frame {
+        height: 270px;
+    }
+
+    .activities-card {
+        height: 100%;
+    }
+
+    .activities-card__img {
+        height: 200px;
+    }
+
+    .activities-card__title {
+        display: flex;
+        align-items: center;
+        height: 38px;
     }
 }
 
