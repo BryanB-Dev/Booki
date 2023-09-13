@@ -20,14 +20,16 @@
             <h1>
                 <img class="header__logo" src="./images/logo/Booki.png" alt="Logo Booki">
             </h1>
-            <nav class="nav">
-                <a class="nav__item nav__item--active" href="#">
-                    Hébergements
-                </a>
-                <a class="nav__item" href="#">
-                    Activités
-                </a>
-            </nav>
+            <div class="neva">
+                <nav class="nav">
+                    <a class="nav__item nav__item--active" href="#">
+                        Hébergements
+                    </a>
+                    <a class="nav__item" href="#">
+                        Activités
+                    </a>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="info-group">
@@ -44,6 +46,7 @@
                         </div>
                         <button class="search__button" type="submit">
                             <span class="search__button-text">Rechercher</span>
+                            <i class="search__button-icon fa-lg fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                         </button>
                     </form>
                 </div>
@@ -135,8 +138,6 @@
                                 </div>
                             </article>
                         </a>
-                    </div>
-                    <div class="hebergement-frame">
                         <a class="hebergement-frame__a" href="#">
                             <article class="card hebergement-card">
                                 <img class="card__img hebergement-card__img"
