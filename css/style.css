@@ -550,7 +550,7 @@ a {
 
     .info-group {
         margin: 0 20px;
-        width: auto;
+        width: calc(100% - 40px);
     }
 
     .search {
