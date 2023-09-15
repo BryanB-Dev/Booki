@@ -30,6 +30,16 @@ body {
     margin-bottom: 30px;
 }
 
+h1 {
+    width: 161.1px;
+    height: 79px;
+    text-indent: -9999px;
+    background-image: url(/images/logo/Booki.png);
+    background-size: 61.1px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .header__logo {
     width: 61.1px;
     height: 19px;
@@ -158,6 +168,10 @@ main {
     line-height: normal;
 }
 
+.search__button-icon {
+    display: none;
+}
+
 .info-filter {
     width: 100%;
     display: flex;
@@ -190,11 +204,8 @@ main {
     border: 2px solid #D9D9D9;
 }
 
-.info-filter__button:hover {
-    background: var(--filter-bg-color)
-}
-
-.info-filter__button--active {
+.info-filter__button:hover,
+.info-filter__button:active {
     background: var(--filter-bg-color)
 }
 
@@ -293,6 +304,7 @@ a {
 }
 
 .hebergement-frame__a {
+    min-width: 0px;
     width: 100%;
 }
 
@@ -406,6 +418,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     align-self: stretch;
+    align-items: stretch;
 }
 
 .activities-frame__a {
@@ -413,10 +426,11 @@ a {
 }
 
 .activities-card {
+    height: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .activities-card__img {
@@ -484,7 +498,7 @@ a {
 
     .populaire-frame {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         gap: 20px;
     }
@@ -561,6 +575,7 @@ a {
     }
 
     .search__button-icon {
+        display: block;
         color: white;
     }
 
@@ -608,6 +623,15 @@ a {
         background-color: var(--main-color);
     }
 
+    .search__field {
+        width: calc(100% - 70px);
+    }
+
+    .search__bar {
+        width: calc(100% - 31px);
+        padding: 5px;
+    }
+
     .hebergement-and-populaire {
         gap: 15px;
     }
@@ -623,7 +647,8 @@ a {
         border-radius: 0;
     }
 
-    .populaire-frame{
+    .populaire-frame {
+        flex-direction: column;
         gap: 15px;
     }
 

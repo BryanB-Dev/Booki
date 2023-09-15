@@ -18,14 +18,14 @@
     <div class="main-container">
         <header class="header">
             <h1>
-                <img class="header__logo" src="./images/logo/Booki.png" alt="Logo Booki">
+                Booki
             </h1>
             <div class="neva">
                 <nav class="nav">
-                    <a class="nav__item nav__item--active" href="#">
+                    <a class="nav__item nav__item--active" href="#hebergement">
                         Hébergements
                     </a>
-                    <a class="nav__item" href="#">
+                    <a class="nav__item" href="#activities">
                         Activités
                     </a>
                 </nav>
@@ -65,7 +65,7 @@
                             <i class="fa-xl fa-solid fa-heart" aria-hidden="true"></i>
                             <span class="info-filter__name">Romantique</span>
                         </button>
-                        <button class="info-filter__button info-filter__button--active">
+                        <button class="info-filter__button">
                             <i class="fa-xl fa-solid fa-fire" aria-hidden="true"></i>
                             <span class="info-filter__name">Nos pépites</span>
                         </button>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="hebergement-and-populaire">
-                <section class="hebergement-and-populaire__section hebergement">
+                <section class="hebergement-and-populaire__section hebergement" id="hebergement">
                     <h2 class="section__title">Hébergements à Marseille</h2>
                     <div class="hebergement-frame">
                         <a class="hebergement-frame__a" href="#">
@@ -275,7 +275,7 @@
                     </div>
                 </section>
             </div>
-            <section class="activities">
+            <section class="activities" id="activities">
                 <h2 class="section__title">Activités à Marseille</h2>
                 <div class="activities-frame">
                     <a class="activities-frame__a" href="#">
@@ -310,7 +310,7 @@
             </section>
         </main>
         <footer class="footer">
-            <section class="footer-frame">
+            <nav class="footer-frame">
                 <h3 class="footer-frame__title">À propos</h3>
                 <a href="#">
                     <p class="section__description">Fonctionnement du site</p>
@@ -321,8 +321,8 @@
                 <a href="#">
                     <p class="section__description">Données et confidentialité</p>
                 </a>
-            </section>
-            <section class="footer-frame">
+            </nav>
+            <nav class="footer-frame">
                 <h3 class="footer-frame__title">Nos hébergements</h3>
                 <a href="#">
                     <p class="section__description">Charte qualité</p>
@@ -330,8 +330,8 @@
                 <a href="#">
                     <p class="section__description">Proposer votre hôtel</p>
                 </a>
-            </section>
-            <section class="footer-frame">
+            </nav>
+            <nav class="footer-frame">
                 <h3 class="footer-frame__title">Assistance</h3>
                 <a href="#">
                     <p class="section__description">Centre d’aide</p>
@@ -339,7 +339,7 @@
                 <a href="#">
                     <p class="section__description">Nous contacter</p>
                 </a>
-            </section>
+            </nav>
         </footer>
     </div>
 </body>
